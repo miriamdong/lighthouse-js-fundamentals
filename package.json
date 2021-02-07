@@ -1,0 +1,31 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "try to fix",
+  "main": "Loopy.js",
+  "dependencies": {
+    "jshint": "^2.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/node": "^7.12.13",
+    "@babel/preset-env": "^7.12.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miriamdong/lighthouse-js-fundamentals.git"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "mir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miriamdong/lighthouse-js-fundamentals/issues"
+  },
+  "homepage": "https://github.com/miriamdong/lighthouse-js-fundamentals#readme"
+}
