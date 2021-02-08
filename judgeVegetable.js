@@ -1,9 +1,14 @@
-const judgeVegetable = ( vegetables, metric ) =>
-  vegetables.reduce( ( winner, contestant ) =>
-    contestant[ metric ] > winner[ metric ] ? contestant : winner
-  ).submitter;
-
-
+const judgeVegetable = ( vegetables, metric ) => {
+  let winner = 0;
+  let name;
+  vegetables.forEach( ( vegetable ) => {
+    if ( vegetable[ metric ] > winner ) {
+      name = vegetable.submitter;
+      winner = vegetable[ metric ];
+    }
+  } );
+  console.log( name );
+};
 
 const vegetables = [ {
     submitter: 'Old Man Franklin',
@@ -22,6 +27,6 @@ const vegetables = [ {
   }
 ];
 
-const metric = 'redness'
+let metric = 'redness';
 
-judgeVegetable( vegetables, metric )
+judgeVegetable( vegetables, metric );
